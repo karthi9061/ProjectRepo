@@ -1,0 +1,85 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #181818; /* Dark background color */
+    border-top: 5px solid #61dafb; /* Light blue border */
+    color: #fff; /* White text color */
+}
+
+.footer-section {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-weight: bold;
+    color: #61dafb; /* Light blue for emphasis */
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #61dafb;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.newsletter-form .MuiTextField-root {
+    flex: 1;
+    border-right: none;
+}
+
+.newsletter-form .MuiOutlinedInput-root {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.newsletter-form .MuiButtonBase-root {
+    background-color: #61dafb;
+    color: #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form .MuiButtonBase-root:hover {
+    background-color: #21a1f1;
+}
+
+.social-icons .MuiIconButton-root {
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.social-icons .facebook {
+    color: #3b5998; /* Facebook blue */
+}
+
+.social-icons .twitter {
+    color: #1DA1F2; /* Twitter blue */
+}
+
+.social-icons .linkedin {
+    color: #0077b5; /* LinkedIn blue */
+}
+
+.social-icons .instagram {
+    color: #e4405f; /* Instagram red */
+}
+
+.social-icons .whatsapp {
+    color: #25D366; /* WhatsApp green */
+}
+
+.social-icons .MuiIconButton-root:hover {
+    filter: brightness(2.8); /* Slightly darken the icon on hover */
+}

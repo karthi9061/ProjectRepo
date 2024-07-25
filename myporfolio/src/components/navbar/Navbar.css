@@ -1,0 +1,23 @@
+/* Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1200; /* Make sure the navbar stays on top of other content */
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .nav-link.active {
+    color: #FF5722; /* Active link color */
+  }
+  
+
+  .MuiAppBar-root {
+    box-shadow: none;
+  }
+  

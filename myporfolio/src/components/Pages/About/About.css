@@ -1,0 +1,222 @@
+/* About.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+:root {
+  --primary-color: #4a90e2; /* Light blue */
+  --secondary-color: #333;  /* Dark gray */
+  --highlight-color: #8d0655; /* Bright yellow */
+  --background-color: #f4f4f4; /* Light gray */
+  --text-color: #666; /* Medium gray */
+  --border-color: #ddd; /* Light gray for borders */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+.About-section {
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.text2 {
+  color: black !important;
+}
+
+.about-me-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  transform: rotate(-1deg);
+}
+
+.about-me-container:hover {
+  transform: rotate(1deg);
+}
+
+.image-container {
+  flex: 1;
+  max-width: 380px;
+  border-color: var(--border-color);
+  margin: 20px;
+  position: relative;
+}
+
+.profile-image {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid var(--highlight-color);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
+}
+
+.info-container {
+  flex: 2;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.info-container h2 {
+  font-size: 32px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--primary-color), var(--highlight-color));
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.info-container h1 {
+  font-size: 40px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  font-weight: 700;
+  transition: opacity 1s ease-in-out;
+}
+
+.info-container p {
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 15px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.details {
+  margin-top: 30px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding: 12px;
+  background-color: var(--background-color);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  color: var(--secondary-color);
+  transition: background-color 0.3s ease;
+}
+
+.detail-item:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.detail-item span:first-child {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.detail-item span:first-child svg {
+  margin-right: 12px;
+  color: var(--highlight-color);
+}
+
+.detail-item span:last-child {
+  color: #fff;
+}
+
+
+
+/* About.css */
+
+.download-btn-container {
+  position: absolute;
+  bottom: 250px;
+  left: 120px;
+  /* Adjust positioning for smaller screens */
+  @media (max-width: 768px) {
+    bottom: 20px;
+    left: 10px;
+  }
+  @media (max-width: 480px) {
+    bottom: 10px;
+    left: 120px;
+  }
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #ff6f61, #d43f77); /* Gradient background */
+  color: white;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* Adjust size for smaller screens */
+  @media (max-width: 768px) {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  @media (max-width: 480px) {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+.download-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.download-btn:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.download-btn:hover {
+  background: linear-gradient(135deg, #d43f77, #ff6f61); /* Reverse gradient on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.download-btn .MuiButton-startIcon {
+  transition: transform 0.3s ease;
+}
+
+.download-btn:hover .MuiButton-startIcon {
+  transform: translateX(6px);
+}
