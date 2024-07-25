@@ -34,7 +34,7 @@ const Contact = React.forwardRef((props, ref) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      e.target.submit(); // Submit the form if validation passes
+      e.target.submit();
     }
   };
 
