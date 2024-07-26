@@ -6,6 +6,7 @@
     background-color: #181818; /* Dark background color */
     border-top: 5px solid #61dafb; /* Light blue border */
     color: #fff; /* White text color */
+    margin-top: 30px;
 }
 
 .footer-section {
@@ -82,4 +83,11 @@
 
 .social-icons .MuiIconButton-root:hover {
     filter: brightness(2.8); /* Slightly darken the icon on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 568px) {
+    .footer {
+        margin-top: 0; /* Remove margin-top on small screens */
+    }
 }

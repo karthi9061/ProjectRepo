@@ -1,11 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&family=Montserrat:wght@400;600&display=swap');
-
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-}
-
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -189,4 +181,23 @@ html, body {
 .contact-socials a:hover {
   color: #ff7e5f;
   transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-section:hover {
+    transform: none;
+  }
+  .contact-section {
+    max-width: 100vw;
+    border-radius: 0;
+    transform: none;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 568px) {
+  .contact-section {
+    margin-top: 0;
+  }
 }
