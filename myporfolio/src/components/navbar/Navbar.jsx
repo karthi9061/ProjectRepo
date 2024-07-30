@@ -53,10 +53,10 @@ function Navbar() {
     <AppBar
       position="fixed"
       sx={{
-        bgcolor: scrolling ? '#333' : 'transparent', // Change color based on scrolling
+        bgcolor: scrolling ? '#333' : 'transparent', 
         boxShadow: 'none',
         borderBottom: 'none',
-        transition: 'background-color 0.3s ease', // Smooth transition
+        transition: 'background-color 0.3s ease',
       }}
     >
       <Container maxWidth="xl">

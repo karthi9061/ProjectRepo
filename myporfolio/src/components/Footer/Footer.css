@@ -15,8 +15,11 @@
 }
 
 .footer-logo {
-    height: 40px;
+    height: 70px;
+    width: 150px;;
     margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 50px;
 }
 
 .bold {
